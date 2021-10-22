@@ -14,7 +14,6 @@ body {
   margin: 0;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -52,9 +51,14 @@ body {
   text-decoration: none;
 }
 
-.header a:visited, 
+ul a:link,
+ul a:visited {
+  color: #505f79;
+}
+
+.header a:visited,
 .header a:link {
-   color: #6070ff;
+  color: #6070ff;
 }
 
 .menu {
@@ -90,9 +94,9 @@ body {
   line-height: 24px;
 }
 
-ul{
+ul {
   display: flex;
-  list-style-type: none;  
+  list-style-type: none;
   color: #505f79;
   font-size: 24px;
   justify-content: flex-start;
@@ -100,11 +104,7 @@ ul{
   margin: 0;
   padding-left: 25px;
 }
-ul a:link,
-ul a:visited {
-   color: #505F79;
 
-}
 li {
   padding-right: 16px;
 }
