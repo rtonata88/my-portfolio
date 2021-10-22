@@ -268,9 +268,53 @@ ul.social {
   padding-left: 0;
 }
 
-ul.skills {
+ul.main-list {
   display: flex;
   flex-direction: column;
-  list-style-type: square;
+  list-style-type: none;
+  width: 80%;
+ 
+}
+li.main-list-item{
+ font-size: 20px;
+}
+
+li.sub-list-item{
+  padding: 10px;
+  background: #F7F7F9;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  width: 100%;
+  
+}
+
+ul.sub-list {
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
   font-size: 15px;
+  vertical-align:middle;
+}
+
+.language-logo{
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 10px;
+}
+
+.skills-heading{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.skills-separator{
+  border-color: #DFE1E6;
 }
