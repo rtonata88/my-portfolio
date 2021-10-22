@@ -114,12 +114,12 @@ li {
   display: grid;
 }
 
-.works-content{
+.works-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   height: auto;
   padding: 16px;
   border-radius: 16px;
@@ -135,10 +135,11 @@ li {
 }
 
 .text-neutrals-N50 {
- color: #C1C7D0;
+  color: #c1c7d0;
 }
+
 .divider {
-  color: #C1C7D0;
+  color: #c1c7d0;
   font-size: 8px;
 }
 
@@ -148,7 +149,8 @@ li {
   align-items: baseline;
   width: 70%;
 }
-.client-name{
+
+.client-name {
   font-size: 13px;
   line-height: 16px;
   font-weight: 600;
@@ -161,10 +163,10 @@ li {
   font-size: 13px;
   line-height: 16px;
   font-weight: 600;
-  color: #7A869A;
+  color: #7a869a;
 }
 
-.project-details{
+.project-details {
   font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
   line-height: 16px;
@@ -181,9 +183,9 @@ li {
   width: 60%;
 }
 
-.label{
-  background: #EBEBFF;
-  color: #6070FF;
+.label {
+  background: #ebebff;
+  color: #6070ff;
   padding: 4px 12px 4px 12px;
   border-radius: 8px;
   font-size: 12px;
@@ -198,37 +200,37 @@ button {
   align-content: space-evenly;
   padding: 12px;
   width: 150px;
-  border: 1px solid #7F8CFF;
+  border: 1px solid #7f8cff;
   box-sizing: border-box;
   border-radius: 8px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   background-color: white;
   margin-top: 20px;
   margin-bottom: 15px;
 }
 
-button:hover{
-  color:white;
-  background-color: #6070FF;
+button:hover {
+  color: white;
+  background-color: #6070ff;
 }
 
-button:active{
-  color:white;
-  background-color: #2230D2;
+button:active {
+  color: white;
+  background-color: #2230d2;
 }
 
-button:disabled{
-  color:#5E6C84;
-  background-color: #505F79;
+button:disabled {
+  color: #5e6c84;
+  background-color: #505f79;
 }
 
-.about-me{
+.about-me {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   height: auto;
   padding: 16px;
   margin-top: 50px;
@@ -239,13 +241,14 @@ button:disabled{
   font-size: 40px;
 }
 
-.about-me-text{
+.about-me-text {
   font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #344563;
   line-height: 24px;
 }
+
 .connect {
   display: flex;
   text-transform: uppercase;
@@ -253,7 +256,8 @@ button:disabled{
   font-size: 16px;
   line-height: 24px;
 }
-ul.social  {
+
+ul.social {
   display: flex;
   list-style-type: none;
   color: #505f79;
@@ -261,15 +265,12 @@ ul.social  {
   justify-content: flex-start;
   text-decoration: none;
   margin: 0;
-  padding-left: 0px
+  padding-left: 0;
 }
 
-ul.skills{
+ul.skills {
   display: flex;
   flex-direction: column;
   list-style-type: square;
   font-size: 15px;
 }
-
-
-
