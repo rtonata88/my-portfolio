@@ -2,7 +2,7 @@
 
 # My portfolio
 
-> I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+> I’m a software developer! I can help you build a product, feature or website Look through some of my work and experience. I created this website as a student at Microverse.
 
 
 ## Built With
@@ -18,6 +18,11 @@ Demo link not available
 
 **To get a local copy up and running follow these simple example steps.**
 
+### Prerequisites
+A basic understanding of Git, Github HTML and CSS is needed to setup and modify this project.
+
+You also need an editor like VS Code or Sublime to edit project files
+
 ### Install
 1. On your computer, open your terminal (For Mac and Linux) or CMD (for Windows) 
 2. Navigate to the directory where you would like to run this project from, preferably from your web server directory
@@ -30,12 +35,13 @@ Demo link not available
 Once the project folder is downloaded to your computer, double click on the *index.html* file to run the project in the browser.
 
 
-
 ## Authors
 
 👤 **Richard Chambula**
 
 - GitHub: [@rtonata88](https://github.com/rtonata88)
+- Twitter: [@rtonata](https://twitter.com/rtonata)
+- LinkedIn: [Richard Chambula](https://www.linkedin.com/in/richard-chambula-49198425/)
 
 ## 🤝 Contributing
 
@@ -46,3 +52,8 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgements
+-Thank you Microverse for giving us this opportunity to learn coding
+-Special thanks to my learning partners and stand up team for constant support and encouragement
+-Last but not least, special thanks to the code reviewers who always make we do a great job and have best practises in our projects.
