@@ -273,19 +273,18 @@ ul.main-list {
   flex-direction: column;
   list-style-type: none;
   width: 80%;
- 
-}
-li.main-list-item{
- font-size: 20px;
 }
 
-li.sub-list-item{
+li.main-list-item {
+  font-size: 20px;
+}
+
+li.sub-list-item {
   padding: 10px;
-  background: #F7F7F9;
+  background: #f7f7f9;
   border-radius: 8px;
   margin-bottom: 5px;
   width: 100%;
-  
 }
 
 ul.sub-list {
@@ -296,25 +295,23 @@ ul.sub-list {
   padding: 0;
   list-style-type: none;
   font-size: 15px;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
-.language-logo{
+.language-logo {
   display: flex;
   align-items: center;
-  justify-content: baseline;
   gap: 10px;
 }
 
-.skills-heading{
+.skills-heading {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
-  
 }
 
-.skills-separator{
-  border-color: #DFE1E6;
+.skills-separator {
+  border-color: #dfe1e6;
 }
