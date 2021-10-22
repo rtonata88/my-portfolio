@@ -11,44 +11,50 @@
 body {
   font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
   background: #e5e5e5;
+  margin: 0;
 }
+
 
 .container {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  padding: 15px;
-  height: 90vh;
   border-bottom-left-radius: 50px;
   background: white;
+  height: 110vh;
 }
 
 .main-content {
   display: flex;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-image: url("../images/bg-image.jpg");
   flex-direction: column;
   justify-content: flex-start;
-  height: auto;
+  background-image: url("../images/bg-image.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  width: 100%;
-  padding-bottom: 20px;
+  margin-left: 26px;
+  margin-right: 36px;
+  margin-top: 20px;
   color: #6070ff;
 }
 
 .logo {
   padding-top: 15px;
-  align-items: center;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  text-decoration: none;
+}
+
+.header a:visited, 
+.header a:link {
+   color: #6070ff;
 }
 
 .menu {
@@ -58,9 +64,9 @@ body {
 .title {
   display: flex;
   font-size: 40px;
-  padding-top: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 43px;
   color: #172b4d;
 }
 
@@ -69,26 +75,36 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: #344563;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 25px;
+  padding-right: 30px;
+  padding-bottom: 10px;
   line-height: 24px;
 }
 
 .action-connect {
   display: flex;
-  padding: 10px;
+  padding-left: 25px;
   text-transform: uppercase;
   color: #7f8cff;
   font-size: 16px;
   line-height: 24px;
 }
 
-.social-media-buttons {
+ul{
   display: flex;
+  list-style-type: none;  
   color: #505f79;
   font-size: 24px;
-  justify-content: space-around;
-  align-items: flex-start;
-  align-items: baseline;
-  flex-grow: 1;
+  justify-content: flex-start;
+  text-decoration: none;
+  margin: 0;
+  padding-left: 25px;
+}
+ul a:link,
+ul a:visited {
+   color: #505F79;
+
+}
+li {
+  padding-right: 16px;
 }
