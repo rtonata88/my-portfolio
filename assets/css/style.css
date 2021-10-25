@@ -176,10 +176,9 @@ li {
 }
 
 .project-stack {
-  display: flex;
+  position: relative;
+  float: left;
   font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
-  justify-content: space-between;
-  align-items: baseline;
   width: 60%;
 }
 
