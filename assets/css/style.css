@@ -180,6 +180,8 @@ li {
   float: left;
   font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
   width: 60%;
+  background-color: lime;
+  color: #ffffff;
 }
 
 .label {
