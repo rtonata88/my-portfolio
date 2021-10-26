@@ -208,6 +208,7 @@ button {
   background-color: white;
   margin-top: 20px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 button:hover {
@@ -314,4 +315,55 @@ ul.sub-list {
 
 .skills-separator {
   border-color: #dfe1e6;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #6070ff;
+  border: 1px solid #dfe1e6;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  margin-top: 50px;
+  border-top-left-radius: 50px;
+}
+
+.contact-body {
+  text-align: center;
+  align-items: flex-start;
+  background-image: url("../images/contact.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 100%;
+  padding: 15px;
+}
+
+.contact-title {
+  color: #fff;
+  font-size: 40px;
+}
+
+.contact-text {
+  font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  line-height: 24px;
+}
+
+.form_input {
+  background: white;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 90%;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.submit {
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
 }
