@@ -208,6 +208,7 @@ button {
   background-color: white;
   margin-top: 20px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 button:hover {
@@ -321,22 +322,25 @@ ul.sub-list {
   justify-content: flex-start;
   background-color: #6070ff;
   border: 1px solid #dfe1e6;
-  height: 100vh;
-  padding: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
   margin-top: 50px;
-  border-top-left-radius: 50px;  
+  border-top-left-radius: 50px; 
 }
 .contact-body{
   text-align: center;
+  align-items: flex-start;
   background-image: url("../images/contact.png");
   background-repeat: no-repeat;
-  background-position: right;
+  background-size: contain;
+  background-position: 100%;
+  padding: 15px;
 } 
 
 .contact-title{
   color: #ffffff;
-  font-size: 26px;  
-  margin-top: 114px;
+  font-size: 40px;  
 }
 
 .contact-text {
@@ -345,4 +349,17 @@ ul.sub-list {
   font-size: 16px;
   color: #ffffff;
   line-height: 24px;
+}
+.form_input {
+  background: white;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 90%;
+  margin-top: 15px; 
+  padding: 10px;
+}
+.submit{
+  display: flex;
+  text-align: center;
+  align-items: flex-start;
 }
