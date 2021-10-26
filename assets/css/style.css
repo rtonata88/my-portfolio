@@ -315,3 +315,34 @@ ul.sub-list {
 .skills-separator {
   border-color: #dfe1e6;
 }
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #6070ff;
+  border: 1px solid #dfe1e6;
+  height: 100vh;
+  padding: 16px;
+  margin-top: 50px;
+  border-top-left-radius: 50px;  
+}
+.contact-body{
+  text-align: center;
+  background-image: url("../images/contact.png");
+  background-repeat: no-repeat;
+  background-position: right;
+} 
+
+.contact-title{
+  color: #ffffff;
+  font-size: 26px;  
+  margin-top: 114px;
+}
+
+.contact-text {
+  font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 24px;
+}
