@@ -18,24 +18,26 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  border-bottom-left-radius: 50px;
+  border-bottom-left-radius: 80px;
   background: white;
+  background-image: url("../images/bg-image.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 80%;
   height: 100vh;
 }
 
 .welcome-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  background-image: url("../images/bg-image.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  justify-content: center;
+  width: 70%;
   height: 100vh;
-  background-position: 80%;
+  margin-left: 300px;
 }
 
 @media screen and (min-width: 480px){
-  .welcome-content {
+  .container {
     background-image: url("../images/desktop-header-bg.jpg");
   }
 }
@@ -76,9 +78,6 @@ ul a:visited {
 .title {
   display: flex;
   font-size: 40px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 43px;
   color: #172b4d;
 }
 
@@ -87,16 +86,12 @@ ul a:visited {
   font-weight: 400;
   font-size: 16px;
   color: #344563;
-  padding-left: 25px;
-  padding-right: 30px;
-  padding-bottom: 10px;
   line-height: 24px;
   width: 70%;
 }
 
 .action-connect {
   display: flex;
-  padding-left: 25px;
   text-transform: uppercase;
   color: #7f8cff;
   font-size: 16px;
@@ -111,7 +106,7 @@ ul {
   justify-content: flex-start;
   text-decoration: none;
   margin: 0;
-  padding-left: 25px;
+  padding-left: 0;
 }
 
 li {
