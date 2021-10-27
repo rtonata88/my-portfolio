@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   border-bottom-left-radius: 50px;
   background: white;
-  height: 110vh;
+  height: 100vh;
 }
 
 .welcome-content {
@@ -31,6 +31,13 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   height: 100vh;
+  background-position: 80%;
+}
+
+@media screen and (min-width: 480px){
+  .welcome-content {
+    background-image: url("../images/desktop-header-bg.jpg");
+  }
 }
 
 .header {
@@ -84,6 +91,7 @@ ul a:visited {
   padding-right: 30px;
   padding-bottom: 10px;
   line-height: 24px;
+  width: 70%;
 }
 
 .action-connect {
