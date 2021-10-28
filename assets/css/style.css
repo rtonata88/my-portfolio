@@ -30,8 +30,14 @@ body {
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
+  animation: rotate-logo 2s;
 }
 
+@keyframes rotate-logo {
+   to {
+     transform: rotateZ(360deg);
+   }
+}
 .container {
   display: flex;
   flex-direction: column;
