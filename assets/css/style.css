@@ -30,6 +30,13 @@ body {
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
+  animation: rotate-logo 2s;
+}
+
+@keyframes rotate-logo {
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 .container {
@@ -198,6 +205,14 @@ body {
   justify-content: space-between;
   align-items: baseline;
   width: 33%;
+}
+
+.project-image {
+  transition: all 0.5s ease-in-out;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
 }
 
 .label {
