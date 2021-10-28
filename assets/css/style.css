@@ -12,7 +12,7 @@ body {
   font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
   background: #e5e5e5;
   margin: 0;
-} 
+}
 
 .header {
   display: flex;
@@ -34,10 +34,11 @@ body {
 }
 
 @keyframes rotate-logo {
-   to {
-     transform: rotateZ(360deg);
-   }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -205,12 +206,15 @@ body {
   align-items: baseline;
   width: 33%;
 }
+
 .project-image {
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.project-image:hover{
+
+.project-image:hover {
   transform: scale(1.05);
 }
+
 .label {
   background: #ebebff;
   color: #6070ff;
