@@ -207,6 +207,11 @@ body {
   width: 33%;
 }
 
+.label:hover {
+  background-color: darkblue;
+  color: white;
+}
+
 .project-image {
   transition: all 0.5s ease-in-out;
 }
