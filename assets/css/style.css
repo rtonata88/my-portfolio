@@ -97,6 +97,12 @@ body {
   padding-top: 0;
 }
 
+a,
+.sub-list {
+  text-decoration: none;
+  color: black;
+}
+
 .header a:visited,
 .header a:link {
   color: #6070ff;
@@ -207,6 +213,16 @@ body {
   width: 33%;
 }
 
+.label {
+  background: #ebebff;
+  color: #6070ff;
+  padding: 4px 12px 4px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
 .label:hover {
   background-color: darkblue;
   color: white;
@@ -218,16 +234,6 @@ body {
 
 .project-image:hover {
   transform: scale(1.05);
-}
-
-.label {
-  background: #ebebff;
-  color: #6070ff;
-  padding: 4px 12px 4px 12px;
-  border-radius: 8px;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 400;
 }
 
 .bottom-section {
@@ -300,12 +306,6 @@ ul.sub-list {
   font-size: 15px;
   vertical-align: middle;
   gap: 10px;
-}
-
-a,
-.sub-list {
-  text-decoration: none;
-  color: black;
 }
 
 .language-logo {
