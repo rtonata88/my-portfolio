@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Poppins', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
   background: #e5e5e5;
   margin: 0;
 }
@@ -72,7 +72,7 @@ body {
 }
 
 .intro-text {
-  font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #344563;
@@ -97,6 +97,12 @@ body {
   padding-top: 0;
 }
 
+a,
+.sub-list {
+  text-decoration: none;
+  color: black;
+}
+
 .header a:visited,
 .header a:link {
   color: #6070ff;
@@ -105,7 +111,7 @@ body {
 .menu {
   display: flex;
   list-style-type: none;
-  font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
   gap: 20px;
   align-items: flex-start;
   font-style: normal;
@@ -182,7 +188,7 @@ body {
 }
 
 .client-details-other {
-  font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
   align-items: baseline;
   font-size: 13px;
   line-height: 16px;
@@ -191,7 +197,7 @@ body {
 }
 
 .project-details {
-  font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
   line-height: 25px;
   font-weight: 400;
@@ -201,18 +207,10 @@ body {
 
 .project-stack {
   display: flex;
-  font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
   justify-content: space-between;
   align-items: baseline;
   width: 33%;
-}
-
-.project-image {
-  transition: all 0.5s ease-in-out;
-}
-
-.project-image:hover {
-  transform: scale(1.05);
 }
 
 .label {
@@ -223,6 +221,19 @@ body {
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+}
+
+.label:hover {
+  background-color: darkblue;
+  color: white;
+}
+
+.project-image {
+  transition: all 0.5s ease-in-out;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
 }
 
 .bottom-section {
@@ -258,7 +269,7 @@ body {
 }
 
 .about-me-text {
-  font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #344563;
@@ -350,7 +361,7 @@ ul.sub-list {
 
 .contact-text {
   text-align: center;
-  font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #fff;
@@ -480,7 +491,7 @@ button:disabled {
   }
 
   .intro-text {
-    font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #344563;
@@ -630,7 +641,7 @@ button:disabled {
   }
 
   .contact-text {
-    font-family: 'PoppinsLight', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #fff;
