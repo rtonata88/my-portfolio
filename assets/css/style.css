@@ -14,6 +14,10 @@ body {
   margin: 0;
 }
 
+.menu-overlay{
+  display:none;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -425,6 +429,45 @@ button:disabled {
 }
 
 @media only screen and (max-width: 600px) {
+  .menu-overlay{
+    display: block;
+    position:absolute;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    background-color: #6070FF;   
+}
+  .menu-close{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    color: white;
+    font-size: 36px;
+    padding-right: 25px;
+    margin-top: 10px;
+
+  }
+
+
+  .mobile-menu-items a{
+    display: flex;
+    font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    align-items: flex-start;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+  .mobile-menu-items a:link{
+    color: white;
+  }
+
+  .mobile-menu-items a:visited{
+    color: white;
+  }
+
   .header {
     display: flex;
     justify-content: center;
