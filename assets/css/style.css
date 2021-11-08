@@ -443,6 +443,7 @@ button:disabled {
   .hide-menu {
     top: 0.05px;
     right: -443px;
+    display:none;
   }
 
   .menu-overlay .hide-menu {
