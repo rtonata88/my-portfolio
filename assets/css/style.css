@@ -435,9 +435,14 @@ button:disabled {
     opacity: 0.9;
     height: 100%;
     width: 100%;
-    background-color: #6070ff;
+    background-color: hsl(234, 100%, 69%);
     transform: translateX(0);
-    transition: transform .35s ease-in-out;
+    transition: transform 0.35s ease-in-out;
+  }
+
+  .hide-menu {
+    top: 0.05px;
+    right: -443px;
   }
 
   .menu-overlay .hide-menu {
@@ -454,13 +459,8 @@ button:disabled {
     margin-top: 10px;
   }
 
-  .hide-menu {
-    top: 0.05px;
-    right: -443px;
-  }
-
-  .hide-hamburger{
-    display:none !important;
+  .hide-hamburger {
+    display: none !important;
   }
 
   .mobile-menu-items a {
@@ -474,6 +474,7 @@ button:disabled {
     line-height: 20px;
     margin-bottom: 32px;
   }
+
   .mobile-menu-items a:link {
     color: white;
   }
