@@ -459,6 +459,10 @@ button:disabled {
     right: -443px;
   }
 
+  .hide-hamburger{
+    display:none !important;
+  }
+
   .mobile-menu-items a {
     display: flex;
     font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
