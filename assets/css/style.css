@@ -430,8 +430,70 @@ button:disabled {
 .popup{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  height: auto;
+  padding: 16px;
+  border-radius: 16px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-right: 30px;
+  width: 90%;
+  height: auto;
 }
+
+.popup-project-image{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+
+.popup-project-details{
+   display: flex;
+}
+
+.column-left{
+  width: 70%;
+  font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #344563;
+  padding-left: 25px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  line-height: 24px;
+}
+
+.column-right {
+   width: 40%;
+}
+
+.popup-project-stack{
+   display: flex;
+  font-family: "PoppinsLight", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 10px
+}
+
+.popup-project-buttons{
+  display: flex;
+  gap: 20px;
+}
+
+
 @media only screen and (max-width: 600px) {
+  .popup-project-details{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+
+}
+.column-left{
+  width: 90%;
+}
   .menu-overlay {
     display: block;
     position: absolute;
