@@ -427,7 +427,10 @@ button:disabled {
   color: #5e6c84;
   background-color: #505f79;
 }
-
+.popup{
+  display: flex;
+  flex-direction: column;
+}
 @media only screen and (max-width: 600px) {
   .menu-overlay {
     display: block;
@@ -521,7 +524,7 @@ button:disabled {
     display: flex;
     flex-direction: column;
     border-bottom-left-radius: 50px;
-    background-image: url("../images/bg-image.jpg");
+    background-image: url("./bg-image.jpg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 100%;
