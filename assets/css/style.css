@@ -440,6 +440,25 @@ button:disabled {
   width: 70%;
 }
 
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.close {
+  margin-right: 10px;
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 .popup-window {
   display: none;
