@@ -427,6 +427,7 @@ button:disabled {
   color: #5e6c84;
   background-color: #505f79;
 }
+
 .popup {
   display: flex;
   flex-direction: column;
@@ -448,7 +449,7 @@ button:disabled {
 
 .close {
   margin-right: 10px;
-  color: #aaaaaa;
+  color: #aaa;
   font-size: 28px;
   font-weight: bold;
 }
@@ -518,15 +519,18 @@ button:disabled {
     margin: 28px;
     padding: 23px;
   }
+
   .popup-project-details {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
   }
+
   .column-left {
     width: 90%;
   }
+
   .menu-overlay {
     display: block;
     position: absolute;
