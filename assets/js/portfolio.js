@@ -22,8 +22,8 @@ seeProjectButton.forEach((element) => {
     document.getElementById('popup-project-title').innerHTML = projectDetails.name;
     let details = '';
     for(let key in projectDetails.details){
-      details += '<span class="client-name">'+projectDetails.details[key]+'</span>';
-      details += '<i class="fas fa-circle divider"></i>';
+      details += '<span class="client-name">'+projectDetails.details[key]+'</span> ';
+      details += ' <i class="fas fa-circle divider"></i> ';
     }
     document.getElementById('popup-project-info').innerHTML = details;
     document.getElementById('popup-project-image-holder').innerHTML =  projectDetails.image;
@@ -106,7 +106,7 @@ window.onclick = function (event) {
                   "typesetting industry. Lorem Ipsum han printer took a galley of type",
           "image": '<img src="./assets/images/project-02.jpg" alt="Tonic project screenshot" class="popup-project-image" id="popup-project-image">', 
           "technologies": [
-            "HTML", "Javascript", "CSS", "Ruby on Rails"
+            "HTML", "Javascript", "CSS"
           ], 
           "live_server": "https://github.com/",
           "source": "https://github.com/"
@@ -130,7 +130,7 @@ window.onclick = function (event) {
                   "typesetting industry. Lorem Ipsum han printer took a galley of type",
           "image": '<img src="./assets/images/project-03.jpg" alt="Tonic project screenshot" class="popup-project-image" id="popup-project-image">', 
           "technologies": [
-            "HTML", "Javascript", "CSS", "Ruby on Rails"
+            "HTML", "Javascript", "CSS"
           ], 
           "live_server": "https://github.com/",
           "source": "https://github.com/"
@@ -154,7 +154,7 @@ window.onclick = function (event) {
                   "typesetting industry. Lorem Ipsum han printer took a galley of type",
           "image": '<img src="./assets/images/project-04.jpg" alt="Tonic project screenshot" class="popup-project-image" id="popup-project-image">', 
           "technologies": [
-            "HTML", "Javascript", "CSS", "Ruby on rails"
+            "HTML", "Javascript", "CSS"
           ], 
           "live_server": "https://github.com/",
           "source": "https://github.com/"
