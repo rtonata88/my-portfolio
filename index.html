@@ -28,16 +28,27 @@
   <body>
     <header class="header">
       <a href="index.html" class="logo"> My Logo </a>
+
       <nav>
         <ul class="menu">
-          <li><a href="#" rel="noreferrer noopener">Portfolio</a></li>
-          <li><a href="#" rel="noreferrer noopener">About</a></li>
-          <li><a href="#" rel="noreferrer noopener">Contact</a></li>
+          <li><a href="#portfolio" rel="noreferrer noopener">Portfolio</a></li>
+          <li><a href="#about" rel="noreferrer noopener">About</a></li>
+          <li><a href="#contact" rel="noreferrer noopener">Contact</a></li>
         </ul>
-        <ul class="mobile-menu">
+        <ul class="mobile-menu mobile-menu-toggle">
           <li><i class="fas fa-bars"></i></li>
         </ul>
       </nav>
+      <div class="menu-overlay hide-menu">
+        <ul class="mobile-menu-toggle menu-close">
+          <li><i class="fas fa-times"></i></li>
+        </ul>
+        <ul class="mobile-menu-items mobile-menu-toggle">
+          <li><a href="#portfolio" rel="noreferrer noopener">Portfolio</a></li>
+          <li><a href="#about" rel="noreferrer noopener">About</a></li>
+          <li><a href="#contact" rel="noreferrer noopener">Contact</a></li>
+        </ul>
+      </div>
     </header>
     <section class="container">
       <section class="welcome-content">
@@ -83,7 +94,7 @@
         </ul>
       </section>
     </section>
-    <section class="grid-section">
+    <section class="grid-section" id="portfolio">
       <section class="works-content">
         <img
           src="./assets/images/project-01.jpg"
@@ -108,7 +119,9 @@
             <span class="label">CSS</span>
             <span class="label">JavaScript</span>
           </div>
-          <button type="button">See Project</button>
+          <button type="button" class="see-project-button" id="Tonic">
+            See Project
+          </button>
         </div>
       </section>
       <section class="works-content">
@@ -130,7 +143,9 @@
             <span class="label">CSS</span>
             <span class="label">JavaScript</span>
           </div>
-          <button type="button">See Project</button>
+          <button type="button" id="360" class="see-project-button">
+            See Project
+          </button>
         </div>
         <img
           src="./assets/images/project-02.jpg"
@@ -162,12 +177,14 @@
             <span class="label">CSS</span>
             <span class="label">JavaScript</span>
           </div>
-          <button type="button">See Project</button>
+          <button type="button" id="Uber" class="see-project-button">
+            See Project
+          </button>
         </div>
       </section>
       <section class="works-content">
         <div class="project-body">
-          <h2 class="project-title">Tonic</h2>
+          <h2 class="project-title">Multi purpose stories</h2>
           <aside class="client-details">
             <span class="client-name">CANOPY</span>
             <i class="fas fa-circle divider"></i>
@@ -184,7 +201,9 @@
             <span class="label">CSS</span>
             <span class="label">JavaScript</span>
           </div>
-          <button type="button">See Project</button>
+          <button type="button" id="Stories" class="see-project-button">
+            See Project
+          </button>
         </div>
         <img
           src="./assets/images/project-04.jpg"
@@ -194,7 +213,7 @@
       </section>
     </section>
     <section class="bottom-section">
-      <section class="about-me">
+      <section class="about-me" id="about">
         <div class="display-left">
           <h2 class="about-me-title">
             About <br />
@@ -284,7 +303,7 @@
           </ul>
         </div>
       </section>
-      <section class="contact-section">
+      <section class="contact-section" id="contact">
         <div class="contact-body">
           <div class="contact-intro">
             <h2 class="contact-title">Contact me</h2>
@@ -331,5 +350,42 @@
         </div>
       </section>
     </section>
+    <div class="popup-window" id="popup">
+      <section class="popup">
+        <div class="popup-header">
+          <h2 class="popup-project-title" id="popup-project-title"></h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="popup-project-info" id="popup-project-info"></div>
+        <div id="popup-project-image-holder">
+          <img
+            src="#"
+            alt="Tonic project screenshot"
+            class="popup-project-image"
+            id="popup-project-image"
+          />
+        </div>
+        <div class="popup-project-details">
+          <div class="column-left">
+            <p
+              class="popup-project-description"
+              id="popup-project-description"
+            ></p>
+          </div>
+          <div class="column-right">
+            <div class="popup-project-stack" id="popup-project-stack"></div>
+            <div class="popup-project-buttons">
+              <button type="button" id="see-live-btn" onclick="">
+                See Live
+              </button>
+              <button type="button" id="see-source-btn" onclick="">
+                See Source
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./assets/js/portfolio.js"></script>
   </body>
 </html>
