@@ -21,8 +21,8 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag("config", "UA-211664565-1");
+      gtag('js', new Date());
+      gtag('config', 'UA-211664565-1');
     </script>
   </head>
   <body>
@@ -314,9 +314,11 @@
             </p>
           </div>
           <form
+            novalidate
             action="https://formspree.io/f/xnqlyrdg"
             method="post"
             class="contact-form"
+            id="contact-form"
           >
             <input
               class="form_input"
@@ -335,6 +337,7 @@
               placeholder="Email address"
               required
             />
+            <span class="error" aria-live="polite"></span>
             <textarea
               class="form_input"
               name="message"
@@ -387,5 +390,6 @@
       </section>
     </div>
     <script src="./assets/js/portfolio.js"></script>
+    <script src="./assets/js/form-validation.js"></script>
   </body>
 </html>
