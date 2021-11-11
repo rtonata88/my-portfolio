@@ -33,3 +33,33 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+const fullname = document.getElementById('fullname');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+
+//On change of email, update the storage
+fullname.addEventListener('change', () =>{
+    store();
+})
+
+email.addEventListener('change', () =>{
+    store();
+})
+
+message.addEventListener('change', () =>{
+    store();
+})
+
+const store = () => {
+  const inputs = {
+      fullname: fullname.value,
+      email: email.value,
+      message: message.value
+  }
+  localStorage.setItem('formInput', JSON.stringify(inputs));
+}
+
+
+
