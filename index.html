@@ -21,8 +21,8 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
-      gtag("config", "UA-211664565-1");
+      gtag('js', new Date());
+      gtag('config', 'UA-211664565-1');
     </script>
   </head>
   <body>
@@ -314,6 +314,7 @@
             </p>
           </div>
           <form
+            novalidate
             action="https://formspree.io/f/xnqlyrdg"
             method="post"
             class="contact-form"
@@ -335,6 +336,7 @@
               placeholder="Email address"
               required
             />
+            <span class="error" aria-live="polite"></span>
             <textarea
               class="form_input"
               name="message"
@@ -386,33 +388,6 @@
         </div>
       </section>
     </div>
-    <section class="works-content popup-button">
-      <img
-        src="./assets/images/project-01.jpg"
-        alt="Tonic project screenshot"
-        class="project-image"
-      />
-      <div class="project-body">
-        <h2 class="project-title">Tonic</h2>
-        <aside class="client-details">
-          <span class="client-name">CANOPY</span>
-          <i class="fas fa-circle divider"></i>
-          <span class="client-details-other">Backend Dev</span>
-          <i class="fas fa-circle divider"></i>
-          <span class="client-details-other">2015</span>
-        </aside>
-        <p class="project-details">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
-        <div class="project-stack">
-          <span class="label">HTML</span>
-          <span class="label">CSS</span>
-          <span class="label">JavaScript</span>
-        </div>
-        <button type="button">See Project</button>
-      </div>
-    </section>
     <script src="./assets/js/portfolio.js"></script>
   </body>
 </html>
