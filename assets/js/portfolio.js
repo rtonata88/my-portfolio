@@ -1,65 +1,3 @@
-const closeMenu = document.querySelectorAll('.mobile-menu-toggle');
-
-closeMenu.forEach((element) => {
-  element.addEventListener('click', () => {
-    const overlay = document.querySelector('.menu-overlay');
-    overlay.classList.toggle('hide-menu');
-
-    const hamburgerMenu = document.querySelector('.mobile-menu');
-    hamburgerMenu.classList.toggle('hide-hamburger');
-  });
-});
-
-const popup = document.getElementById('popup');
-
-const seeProjectButton = document.querySelectorAll('.see-project-button');
-seeProjectButton.forEach((element) => {
-  element.addEventListener('click', () => {
-    popup.style.display = 'block';
-
-    const projectDetails = getProjectDetails(element.id);
-    document.getElementById('popup-project-title').innerHTML = projectDetails.name;
-    let details = '';
-    for (const key in projectDetails.details) {
-      details
-        += `<span class="client-name">${projectDetails.details[key]}</span> `;
-      details += ' <i class="fas fa-circle divider"></i> ';
-    }
-    document.getElementById('popup-project-info').innerHTML = details;
-    document.getElementById('popup-project-image-holder').innerHTML = projectDetails.image;
-    document.getElementById('popup-project-description').innerHTML = projectDetails.description;
-
-    let popupProjectStack = '';
-    for (const key in projectDetails.technologies) {
-      popupProjectStack
-        += `<span class="label">${projectDetails.technologies[key]}</span>`;
-    }
-    document.getElementById('popup-project-stack').innerHTML = popupProjectStack;
-    document.getElementById('see-live-btn').addEventListener('click', () => {
-      window.location.href = projectDetails.live_server;
-    });
-
-    document.getElementById('see-source-btn').addEventListener('click', () => {
-      window.location.href = projectDetails.source;
-    });
-  });
-});
-
-// Get the <span> element that closes the modal
-const span = document.getElementsByClassName('close')[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  popup.style.display = 'none';
-};
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target === popup) {
-    popup.style.display = 'none';
-  }
-};
-
 const getProjectDetails = (project) => {
   const projectDetails = {
     Tonic: {
@@ -144,4 +82,68 @@ const getProjectDetails = (project) => {
   };
 
   return projectDetails[project];
+};
+
+const closeMenu = document.querySelectorAll('.mobile-menu-toggle');
+
+closeMenu.forEach((element) => {
+  element.addEventListener('click', () => {
+    const overlay = document.querySelector('.menu-overlay');
+    overlay.classList.toggle('hide-menu');
+
+    const hamburgerMenu = document.querySelector('.mobile-menu');
+    hamburgerMenu.classList.toggle('hide-hamburger');
+  });
+});
+
+const popup = document.getElementById('popup');
+
+const seeProjectButton = document.querySelectorAll('.see-project-button');
+seeProjectButton.forEach((element) => {
+  element.addEventListener('click', () => {
+    popup.style.display = 'block';
+
+    const projectDetails = getProjectDetails(element.id);
+    document.getElementById('popup-project-title').innerHTML = projectDetails.name;
+    let details = '';
+
+    Object.keys(projectDetails.details).forEach((key) => {
+      details += `<span class="client-name">${key}</span> `;
+      details += ' <i class="fas fa-circle divider"></i> ';
+    });
+
+    document.getElementById('popup-project-info').innerHTML = details;
+    document.getElementById('popup-project-image-holder').innerHTML = projectDetails.image;
+    document.getElementById('popup-project-description').innerHTML = projectDetails.description;
+
+    let popupProjectStack = '';
+    Object.keys(projectDetails.technologies).forEach((key) => {
+      popupProjectStack
+        += `<span class="label">${projectDetails.technologies[key]}</span>`;
+    });
+
+    document.getElementById('popup-project-stack').innerHTML = popupProjectStack;
+    document.getElementById('see-live-btn').addEventListener('click', () => {
+      window.location.href = projectDetails.live_server;
+    });
+
+    document.getElementById('see-source-btn').addEventListener('click', () => {
+      window.location.href = projectDetails.source;
+    });
+  });
+});
+
+// Get the <span> element that closes the modal
+const span = document.getElementsByClassName('close')[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = () => {
+  popup.style.display = 'none';
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = (event) => {
+  if (event.target === popup) {
+    popup.style.display = 'none';
+  }
 };

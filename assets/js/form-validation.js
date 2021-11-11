@@ -1,5 +1,4 @@
 const form = document.getElementById('contact-form');
-const emailEl = document.querySelector('email');
 const emailError = document.querySelector('span.error');
 
 const isEmailValid = (email) => {
