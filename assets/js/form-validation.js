@@ -65,4 +65,4 @@ const populateForm = () => {
   email.value = JSON.parse(storage).email;
   message.value = JSON.parse(storage).message;
 };
-populateForm();
+populateFrm();
