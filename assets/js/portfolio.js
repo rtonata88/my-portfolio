@@ -1,83 +1,39 @@
 const getProjectDetails = (project) => {
   const projectDetails = {
-    Tonic: {
-      name: 'Tonic',
-      details: ['CANOPY', 'Backend', '2015', 'Dev'],
+    Portfolio: {
+      name: 'My Portfolio',
+      details: ['PORTFOLIO', 'Front-end', '2021'],
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting'
-        + "industry. Lorem Ipsum has been the industry's standard dummy text"
-        + 'ever since the 1500s, when an unknown printer took a galley of type'
-        + 'and scrambled it 1960s with the releaLorem Ipsum is simply dummy'
-        + 'text of the printing and typesetting industry. Lorem Ipsum has been'
-        + "the industry's standard dummy text ever since the 1500s, when an"
-        + 'unknown printer took a galley of type and scrambled it 1960s with'
-        + 'the releorem Ipsum is simply dummy text of the printing and'
-        + 'typesetting industry. Lorem Ipsum han printer took a galley of type',
+        'I’m a software developer! I can help you build a product, feature or website Look through some of my work and experience. I created this website as a student at Microverse.',
       image:
-        '<img src="./assets/images/project-01.jpg" alt="Tonic project screenshot" class="popup-project-image" id="popup-project-image">',
+        '<img src="./assets/images/portfolio-large.png" alt="My portfolio" class="popup-project-image" id="popup-project-image">',
       technologies: ['HTML', 'Javascript', 'CSS'],
-      live_server: 'https://github.com/',
-      source: 'https://github.com/',
+      live_server: 'https://rtonata88.github.io/my-portfolio/',
+      source: 'https://github.com/rtonata88/my-portfolio',
     },
 
-    360: {
-      name: 'Facebook 360',
-      details: ['Facebook', 'Fullstack dev', '2015'],
+    Safaris: {
+      name: 'Namibia Safaris',
+      details: ['Namibia Safaris', 'Front-end', '2021'],
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting'
-        + "industry. Lorem Ipsum has been the industry's standard dummy text"
-        + 'ever since the 1500s, when an unknown printer took a galley of type'
-        + 'and scrambled it 1960s with the releaLorem Ipsum is simply dummy'
-        + 'text of the printing and typesetting industry. Lorem Ipsum has been'
-        + "the industry's standard dummy text ever since the 1500s, when an"
-        + 'unknown printer took a galley of type and scrambled it 1960s with'
-        + 'the releorem Ipsum is simply dummy text of the printing and'
-        + 'typesetting industry. Lorem Ipsum han printer took a galley of type',
+        'We are a tour operator company based in Namibia with over 20 years experience in creating long lasting memories Safari Holidays in Namibia. Our passionate team – who have nothing but love for nature and travel – is keenly focused on making your trip memorable. We offer specific personalized wishes and preferences, while we strife to provide an excellent service resulting in unforgettable and most compelling experiences.',
       image:
-        '<img src="./assets/images/project-02.jpg" alt="Tonic project screenshot" class="popup-project-image" id="popup-project-image">',
+        '<img src="./assets/images/Namibia-safaris-large.png" alt="Tonic project screenshot" class="popup-project-image" id="popup-project-image">',
       technologies: ['HTML', 'Javascript', 'CSS'],
-      live_server: 'https://github.com/',
-      source: 'https://github.com/',
+      live_server: 'https://rtonata88.github.io/namibia_safaris/',
+      source: 'https://github.com/rtonata88/namibia_safaris',
     },
 
-    Uber: {
-      name: 'Uber Navigation',
-      details: ['Uber', 'Lead Developer', '2018'],
+    Todo: {
+      name: 'TODO App',
+      details: ['TODO App', 'Front-end', '2021'],
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting'
-        + "industry. Lorem Ipsum has been the industry's standard dummy text"
-        + 'ever since the 1500s, when an unknown printer took a galley of type'
-        + 'and scrambled it 1960s with the releaLorem Ipsum is simply dummy'
-        + 'text of the printing and typesetting industry. Lorem Ipsum has been'
-        + "the industry's standard dummy text ever since the 1500s, when an"
-        + 'unknown printer took a galley of type and scrambled it 1960s with'
-        + 'the releorem Ipsum is simply dummy text of the printing and'
-        + 'typesetting industry. Lorem Ipsum han printer took a galley of type',
+        'A simple app that displays your todo tasks with basic features such add, delete, mark complete, mark incomplete, etc.',
       image:
-        '<img src="./assets/images/project-03.jpg" alt="Tonic project screenshot" class="popup-project-image" id="popup-project-image">',
+        '<img src="./assets/images/todo-large.png" alt="Tonic project screenshot" class="popup-project-image" id="popup-project-image">',
       technologies: ['HTML', 'Javascript', 'CSS'],
-      live_server: 'https://github.com/',
-      source: 'https://github.com/',
-    },
-
-    Stories: {
-      name: 'Multi purpose stories',
-      details: ['Facebook', 'Backend', '2021'],
-      description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting'
-        + "industry. Lorem Ipsum has been the industry's standard dummy text"
-        + 'ever since the 1500s, when an unknown printer took a galley of type'
-        + 'and scrambled it 1960s with the releaLorem Ipsum is simply dummy'
-        + 'text of the printing and typesetting industry. Lorem Ipsum has been'
-        + "the industry's standard dummy text ever since the 1500s, when an"
-        + 'unknown printer took a galley of type and scrambled it 1960s with'
-        + 'the releorem Ipsum is simply dummy text of the printing and'
-        + 'typesetting industry. Lorem Ipsum han printer took a galley of type',
-      image:
-        '<img src="./assets/images/project-04.jpg" alt="Tonic project screenshot" class="popup-project-image" id="popup-project-image">',
-      technologies: ['HTML', 'Javascript', 'CSS'],
-      live_server: 'https://github.com/',
-      source: 'https://github.com/',
+      live_server: 'https://rtonata88.github.io/todo/dist/',
+      source: 'https://github.com/rtonata88/todo',
     },
   };
 
@@ -108,7 +64,7 @@ seeProjectButton.forEach((element) => {
     let details = '';
 
     Object.keys(projectDetails.details).forEach((key) => {
-      details += `<span class="client-name">${key}</span> `;
+      details += `<span class="client-name">${projectDetails.details[key]}</span> `;
       details += ' <i class="fas fa-circle divider"></i> ';
     });
 
@@ -118,8 +74,7 @@ seeProjectButton.forEach((element) => {
 
     let popupProjectStack = '';
     Object.keys(projectDetails.technologies).forEach((key) => {
-      popupProjectStack
-        += `<span class="label">${projectDetails.technologies[key]}</span>`;
+      popupProjectStack += `<span class="label">${projectDetails.technologies[key]}</span>`;
     });
 
     document.getElementById('popup-project-stack').innerHTML = popupProjectStack;

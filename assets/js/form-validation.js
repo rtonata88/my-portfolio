@@ -60,9 +60,9 @@ message.addEventListener('change', () => {
 });
 
 const populateForm = () => {
-  const storage = localStorage.getItem('formInput');
-  fullname.value = JSON.parse(storage).fullname;
-  email.value = JSON.parse(storage).email;
-  message.value = JSON.parse(storage).message;
+  const storage = JSON.parse(localStorage.getItem('formInput')) || '';
+  fullname.value = storage.fullname || '';
+  email.value = storage.email || '';
+  message.value = storage.message || '';
 };
 populateForm();
